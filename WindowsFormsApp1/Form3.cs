@@ -14,8 +14,7 @@ namespace WindowsFormsApp1
     {
         int b, count = 0;
         public string b1;
-        Random ert = new Random();
-        int ren = rnd.Next(1, 40);
+       public static Random ert = new Random();
         public Form3()
         {
             InitializeComponent();
@@ -23,10 +22,17 @@ namespace WindowsFormsApp1
 
         private void button2_Click(object sender, EventArgs e)
         {
-            b += ren;
+            this.button2.Text = ert.Next(1, 20).ToString();
+
+            int val = Convert.ToInt32(button2.Text);
+            b += val;
             count++;
             this.button2.Enabled = false;
-            this.button2.Text = ren.ToString();
+           
+
+            
+            
+            
             if (count > 2)
             {
                 this.button1.Enabled = false;
@@ -48,11 +54,15 @@ namespace WindowsFormsApp1
 
         private void button3_Click(object sender, EventArgs e)
         {
+            this.button3.Text = ert.Next(1, 20).ToString();
 
-            b += ren;
+            int val = Convert.ToInt32(button3.Text);
+            b += val;
             count++;
             this.button3.Enabled = false;
-            this.button3.Text = ren.ToString();
+            
+
+            
             if (count > 2)
             {
                 this.button2.Enabled = false;
@@ -74,11 +84,14 @@ namespace WindowsFormsApp1
 
         private void button4_Click(object sender, EventArgs e)
         {
-
-            b += ren;
+            this.button4.Text = ert.Next(1, 20).ToString();
+            int val = Convert.ToInt32(button4.Text);
+            b += val;
             count++;
             this.button4.Enabled = false;
-            this.button4.Text = ren.ToString();
+            
+
+           
             if (count > 2)
             {
                 this.button2.Enabled = false;
@@ -99,10 +112,14 @@ namespace WindowsFormsApp1
 
         private void button5_Click(object sender, EventArgs e)
         {
-            b += ren;
+            this.button5.Text = ert.Next(1, 20).ToString();
+            int val = Convert.ToInt32(button5.Text);
+            b += val;
             count++;
-            this.button1.Enabled = false;
-            this.button1.Text = ren.ToString();
+            this.button5.Enabled = false;
+            
+
+           
             if (count > 2)
             {
                 this.button2.Enabled = false;
@@ -124,11 +141,15 @@ namespace WindowsFormsApp1
 
         private void button6_Click(object sender, EventArgs e)
         {
+            this.button6.Text = ert.Next(1, 20).ToString();
 
-            b += ren;
+            int val = Convert.ToInt32(button6.Text);
+            b += val;
             count++;
             this.button6.Enabled = false;
-            this.button6.Text = ren.ToString();
+            
+
+            
             if (count > 2)
             {
                 this.button2.Enabled = false;
@@ -172,11 +193,16 @@ namespace WindowsFormsApp1
 
         private void button1_Click(object sender, EventArgs e)
         {
+            this.button1.Text = ert.Next(1, 20).ToString();
 
-            b += 3;
+            int val = Convert.ToInt32(button1.Text);
+            b += val;
             count++;
             this.button1.Enabled = false;
-            this.button1.Text = "3";
+            
+           
+
+            
             if (count > 1)
             {
                 this.button2.Enabled = false;

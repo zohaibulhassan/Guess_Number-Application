@@ -37,7 +37,7 @@ namespace WindowsFormsApp1
 
             a.n1 = textBox1.Text;
 
-            if (radioButton1.Checked && this.textBox1.Text == "abc" & this.textBox2.Text == "123")
+            if (radioButton1.Checked && this.textBox1.Text == "Zohaib Ul Hassan" & this.textBox2.Text == "Easy")
             {
                 a.Show();
             }
@@ -46,7 +46,7 @@ namespace WindowsFormsApp1
                 this.Show();
             }
             b.b1 = textBox2.Text;
-            if (radioButton2.Checked && this.textBox1.Text == "abc" & this.textBox2.Text == "123")
+            if (radioButton2.Checked && this.textBox1.Text == "Zohaib Ul Hassan" & this.textBox2.Text == "Expert")
             {
                 b.Show();
             }

@@ -14,10 +14,10 @@ namespace Game
     {
         
        
-        int n, count = 0;
+        int n, count = 0 ;
         public string n1;
-        Random rnd = new Random();
-        int ron = rnd.Next(1,25);
+        public static Random rnd = new Random();
+        int ron = rnd.Next(1,20);
 
         public Form2()
         {
@@ -54,11 +54,12 @@ namespace Game
 
         private void button1_Click_1(object sender, EventArgs e)
         {
-           n += Convert.ToInt32(ron);
+            this.button1.Text = rnd.Next(1, 20).ToString();
+
+            int val = Convert.ToInt32(button1.Text);
+            n += val;
             count++;
-            
             this.button1.Enabled = false;
-            this.button1.Text = ron.ToString() ;
             if (count > 3)
             {
                 this.button2.Enabled = false;
@@ -83,10 +84,12 @@ namespace Game
         private void button2_Click_1(object sender, EventArgs e)
         {
 
-            n += Convert.ToInt32(ron);
+            this.button2.Text = rnd.Next(1, 20).ToString();
+
+            int val = Convert.ToInt32(button2.Text);
+            n += val;
             count++;
             this.button2.Enabled = false;
-            this.button2.Text = ron.ToString();
             if (count > 3)
             {
                 this.button1.Enabled = false;
@@ -110,10 +113,12 @@ namespace Game
 
         private void button4_Click_1(object sender, EventArgs e)
         {
-            n += Convert.ToInt32(ron);
+            this.button4.Text = rnd.Next(1, 20).ToString();
+
+            int val = Convert.ToInt32(button4.Text);
+            n += val;
             count++;
             this.button4.Enabled = false;
-            this.button4.Text = ron.ToString();
             if (count > 3)
             {
                 this.button3.Enabled = false;
@@ -137,10 +142,12 @@ namespace Game
 
         private void button5_Click_1(object sender, EventArgs e)
         {
-            n += Convert.ToInt32(ron);
+            this.button5.Text = rnd.Next(1, 20).ToString();
+
+            int val = Convert.ToInt32(button5.Text);
+            n += val;
             count++;
             this.button5.Enabled = false;
-            this.button5.Text = ron.ToString();
             if (count > 3)
             {
                 this.button3.Enabled = false;
@@ -164,10 +171,12 @@ namespace Game
 
         private void button6_Click_1(object sender, EventArgs e)
         {
-            n += Convert.ToInt32(ron);
+            this.button6.Text = rnd.Next(1, 20).ToString();
+
+            int val = Convert.ToInt32(button6.Text);
+            n += val;
             count++;
             this.button6.Enabled = false;
-            this.button6.Text = ron.ToString();
             if (count > 3)
             {
                 this.button3.Enabled = false;
@@ -191,10 +200,12 @@ namespace Game
 
         private void button7_Click_1(object sender, EventArgs e)
         {
-            n += Convert.ToInt32(ron);
+            this.button7.Text = rnd.Next(1, 20).ToString();
+
+            int val = Convert.ToInt32(button7.Text);
+            n += val;
             count++;
             this.button7.Enabled = false;
-            this.button7.Text = ron.ToString();
             if (count > 3)
             {
                 this.button3.Enabled = false;
@@ -219,10 +230,12 @@ namespace Game
         private void button8_Click_1(object sender, EventArgs e)
         {
 
-            n += Convert.ToInt32(ron);
+            this.button8.Text = rnd.Next(1, 20).ToString();
+
+            int val = Convert.ToInt32(button8.Text);
+            n += val;
             count++;
             this.button8.Enabled = false;
-            this.button8.Text = ron.ToString();
             if (count > 3)
             {
                 this.button3.Enabled = false;
@@ -248,10 +261,12 @@ namespace Game
 
         private void button9_Click_1(object sender, EventArgs e)
         {
-            n += Convert.ToInt32(ron);
+            this.button9.Text = rnd.Next(1, 20).ToString();
+
+            int val = Convert.ToInt32(button9.Text);
+            n += val;
             count++;
             this.button9.Enabled = false;
-            this.button9.Text = ron.ToString();
             if (count > 3)
             {
                 this.button3.Enabled = false;
@@ -276,10 +291,12 @@ namespace Game
 
         private void button3_Click_1(object sender, EventArgs e)
         {
-           n += Convert.ToInt32(ron);
+            this.button3.Text = rnd.Next(1, 20).ToString();
+
+            int val = Convert.ToInt32(button3.Text);
+            n += val;
             count++;
             this.button3.Enabled = false;
-            this.button3.Text = ron.ToString();
             if (count > 3)
             {
                 this.button4.Enabled = false;
